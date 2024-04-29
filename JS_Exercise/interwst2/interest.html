@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="loanamount">Loan Amount:</label>
+    <input type="text" id="loanamount" name="loanamount" value=""><br><br>
+    <label for="year">Year:</label>
+    <input type="text" id="year" name="year" value=""><br><br>
+    <label for="Type">Interest Type:</label>
+    <select id="Type" name="Type">
+        <option value="Vineinterest">Vine interest</option>
+        <option value="Pettyinterest">Petty interest</option>
+    </select><br><br>
+    <label for="totalamount">Total Amount:</label>
+    <input type="text" id="totalamount" name="totalamount" value=""><br><br>
+    <button onclick="totalmoney()">Total</button>
+    <script src="interest.js"></script>
+</body>
+</html>

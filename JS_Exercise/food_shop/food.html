@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Shop</title>
+</head>
+<body>
+    <center>
+    <h1>Food Shop</h1>
+    <p>Pasta = Rs:100</p>
+    <p>Pizza = Rs:200</p>
+    <p>Burger = Rs:150</p>
+    <label for="Pasta">Pasta</label>
+    <input type="number" id="Pasta" name="Pasta" value="1" required><br><br>
+    <label for="Pizza">Pizza</label>
+    <input type="number" id="Pizza" name="Pizza" value="1" required><br><br>
+    <label for="Burger">Burger</label>
+    <input type="number" id="Burger" name="Burger" value="1" required><br><br>
+    <select id="select-vegi" name="select-vegi">
+        <option value="vegi">Vegi</option>
+        <option value="non-vegi">non-Vegi</option>
+    </select><br><br>
+    <label for="Total">Total</label>
+    <input type="number" id="Total" name="Total" readonly><br><br>
+
+    <button type="button" onclick="calculateTotal()">Calculate Total</button><br><br>
+
+    <label for="Discount">Discount</label>
+    <input type="number" id="Discount" name="Discount"><br><br>
+
+    <button type="button" onclick="calculateDiscount()">Calculate Discount</button><br><br>
+
+    <label for="F_Total">Final Total</label>
+    <input type="number" id="F_Total" name="F_Total" readonly><br><br>
+
+    <button type="button" onclick="calculateBill()">Calculate Bill</button>
+</center>
+    <script src="food.js"></script>
+</body>
+</html>
